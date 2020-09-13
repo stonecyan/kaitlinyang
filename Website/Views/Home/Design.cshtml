@@ -1,0 +1,202 @@
+﻿
+@{
+    ViewBag.Title = "Design";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ Html.RenderPartial("NavPartial");}
+
+<div class="design-grid-container">
+    <div class="designProject" id="feather">
+        <figure>
+            <img src="~/Images/Design/OfAFeatherBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Of A Feather", "OfAFeather", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="sherlockBones">
+        <figure>
+            <img src="~/Images/Design/SherlockBonesBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Sherlock Bones", "SherlockBones", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="mrComplain">
+        <figure>
+            <img src="~/Images/Design/MrComplainBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Mr. Complain Takes the Train", "MrComplain", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="lightsWonderRock">
+        <figure>
+            <img src="~/Images/Design/LightsonWonderRockBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Lights on Wonder Rock", "LightsWonderRock", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="ghostCrutchfield">
+        <figure>
+            <img src="~/Images/Design/GhostofCrutchfieldHallBookCover.jpg" />
+            <figcaption>@Html.ActionLink("The Ghost of Crutchfield Hall", "GhostCrutchfield", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="closedForSeason">
+        <figure>
+            <img src="~/Images/Design/ClosedForTheSeasonBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Closed for The Season", "ClosedForSeason", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="timeForAndrew">
+        <figure>
+            <img src="~/Images/Design/TimeForAndrewBookCover.jpg" />
+            <figcaption>@Html.ActionLink("Time For Andrew", "TimeForAndrew", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="dollInGarden">
+        <figure>
+            <img src="~/Images/Design/DollinTheGardenBookCover.jpg" />
+            <figcaption>@Html.ActionLink("The Doll in the Garden", "DollInGarden", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="chocolate">
+        <figure>
+            <img src="~/Images/Design/Chocolate Book Design.jpg" />
+            <figcaption>@Html.ActionLink("Chocolate", "Chocolate", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="strength">
+        <figure>
+            <img src="~/Images/Design/Strength Magazine Design.jpg" />
+            <figcaption>@Html.ActionLink("Strength Magazine", "Strength", "Design")</figcaption>
+        </figure>
+    </div>
+    <div class="designProject" id="magic">
+        <figure>
+            <img src="~/Images/Design/The Magic House Design.jpg" />
+            <figcaption>@Html.ActionLink("The Magic House", "MagicHouse", "Design")</figcaption>
+        </figure>
+    </div>
+    <div id="podcast">
+        <div class="designProject">
+            <figure>
+                <img src="~/Images/Design/Podcast Book Design.jpg" />
+                <figcaption>@Html.ActionLink("Podcast Book Design", "Podcast", "Design")</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="boba">
+        <div class="designProject">
+            <figure>
+                <img src="~/Images/Design/St. Louis Bubble Tea Rebrand.jpg" />
+                <figcaption>@Html.ActionLink("St. Louis Bubble Tea Rebrand", "Boba", "Design")</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="college">
+        <div class="designProject">
+            <figure>
+                <img src="~/Images/Design/College Profile Brochure Design.jpg" />
+                <figcaption>@Html.ActionLink("College Profile Brochure", "College", "Design")</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="editorial">
+        <div class="designProject">
+            <figure>
+                <img src="~/Images/Design/Editorial Design.jpg" />
+                <figcaption>@Html.ActionLink("Editorial Design", "Editorial", "Design")</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="missing">
+        <div class="designProject">
+            <figure>
+                <img src="~/Images/Design/Missing Pieces Design.jpg" />
+                <figcaption>@Html.ActionLink("Missing Pieces", "MissingPieces", "Design")</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="mobileDesign">
+    <div>
+        <a href="@Url.Action("OfAFeather", "Design")">
+            <img class="mobileImage" src="~/Images/Design/OfAFeatherBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("SherlockBones", "Design")">
+            <img class="mobileImage" src="~/Images/Design/SherlockBonesBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("MrComplain", "Design")">
+            <img class="mobileImage" src="~/Images/Design/MrComplainBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("LightsWonderRock", "Design")">
+            <img class="mobileImage" src="~/Images/Design/LightsonWonderRockBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("GhostCrutchfield", "Design")">
+            <img class="mobileImage" src="~/Images/Design/GhostofCrutchfieldHallBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("CloseForSeason", "Design")">
+            <img class="mobileImage" src="~/Images/Design/ClosedForTheSeasonBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("TimeForAndrew", "Design")">
+            <img class="mobileImage" src="~/Images/Design/TimeForAndrewBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("DollInGarden", "Design")">
+            <img class="mobileImage" src="~/Images/Design/DollinTheGardenBookCover.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Chocolate", "Design")">
+            <img class="mobileImage" src="~/Images/Design/Chocolate Book Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Strength","Design")">
+            <img class="mobileImage" src="~/Images/Design/Strength Magazine Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("MagicHouse", "Design")">
+            <img class="mobileImage" src="~/Images/Design/The Magic House Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Podcast","Design")">
+            <img class="mobileImage" src="~/Images/Design/Podcast Book Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Boba","Design")">
+            <img class="mobileImage" src="~/Images/Design/St. Louis Bubble Tea Rebrand.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("College","Design")">
+            <img class="mobileImage" src="~/Images/Design/College Profile Brochure Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Editorial","Design")">
+            <img class="mobileImage" src="~/Images/Design/Editorial Design.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("MissingPieces","Design")">
+            <img class="mobileImage" src="~/Images/Design/Missing Pieces Design.jpg" />
+        </a>
+    </div>
+
+
+
+</div>

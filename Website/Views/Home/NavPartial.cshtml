@@ -1,0 +1,56 @@
+﻿<div class="topnav" id="topnavigation">
+    <div class="mobileNavLeft">
+        <a href="javascript:void(0);" class="navToggle" onclick="navToggle()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </div>
+    <div class="mobileNavCenter">
+        <img id="navLogo" src="~/Images/Logo Text.jpg" />
+    </div>
+</div>
+
+<div id="navigation" class="navigation">
+    <img class="weblogo" src="~/Images/LogoSelfPortrait.jpg" />
+    <img class="mobilelogo" src="~/Images/LogoPicture.jpg" />
+    <div class="navItems">
+        <ul>
+            <li><a href="~/Home/Illustration" onclick="navToggleOff">illustration </a></li>
+            <li><a href="~/Home/Design" onclick="navToggleOff">design</a></li>
+            <li><a href="~/Home/About" onclick="navToggleOff">about</a></li>
+        </ul>
+    </div>
+
+    <div id="navIcons">
+        <a href="https://www.linkedin.com/in/kaitlin-yang-98447386/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/kaitlin.y.draws/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/kaitlin.y.draws/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <br />
+    <br />
+    <div id="navContact">
+        <a href="mailto:kaitlin.k.yang@gmail.com">kaitlin.k.yang@gmail.com</a>
+        <p id="navNumber">(626) 818-8078</p>
+    </div>
+</div>
+
+<script>
+    
+    function navToggle() {
+        var menu = document.getElementById("navigation");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else {
+            menu.style.display = "block";
+        }
+    }
+
+    function navToggleOff() {
+        var w = document.documentElement.clientWidth;
+        var menu = document.getElementById("navigation");
+        if (w < 768) {
+            menu.style.display = "none";
+        }
+    }
+</script>

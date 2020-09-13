@@ -1,0 +1,175 @@
+﻿.navigation {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: white;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+
+li a {
+    text-align: left;
+    font-variant: small-caps;
+    color: black;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+}
+
+li a:hover {
+    color: #5ea1a9;
+}
+
+
+.illustration-grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, minmax(250px, max-content));
+    grid-gap: 10px;
+    margin-left: 250px;
+}
+
+.gridImage, .gridOverlay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: white;
+}
+
+.gridOverlay {
+    opacity: 0;
+    z-index: 1;
+    outline: 12px solid white;
+    outline-offset: -30px;
+}
+
+.gridOverlay:hover {
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.gridOverlay h1 {
+    text-align: center;
+    padding-top: 20%;
+}
+
+
+#secretSanta {
+    grid-column: 1/8;
+    grid-row: 1/2;
+}
+
+#secretSantaOverlay {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    background-color: #eec3b3;
+}
+
+#rapBattle {
+    grid-column: 11/-4;
+    grid-row: 1/2;
+}
+
+#rapBattleOverlay {
+    grid-column: 11/-4;
+    grid-row: 1/2;
+    background-color: #25323c;
+}
+
+#emperor {
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+
+#emperorOverlay {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    background-color: #9cced4;
+}
+
+#bear {
+    grid-column: 11/-6;
+    grid-row: 2/3;
+}
+
+#bearOverlay {
+    grid-column: 11/-6;
+    grid-row: 2/3;
+    background-color: #97c4af;
+}
+
+#buddha {
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+#buddhaOverlay {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    background-color: #f0aeaf;
+}
+
+#sick {
+    grid-column: 1/6;
+    grid-row: 4/5;
+}
+
+#sickOverlay {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    background-color: #aaa9a9;
+}
+
+#mushrooms {
+    grid-column: 11/-6;
+    grid-row: 3/5;
+}
+
+#mushroomsOverlay {
+    grid-column: 11/-6;
+    grid-row: 3/5;
+    background-color: #a3c1cb;
+}
+
+.aboutDescription{
+    margin-left: 250px;
+    padding-right: 5%;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+#aboutImage{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resumeDownload{
+    display: block;
+    text-align: center;
+}
+
+.aboutTitle{
+    text-align: center;
+}

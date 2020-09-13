@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "Illustration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ Html.RenderPartial("NavPartial");}
+
+    <div class="illustration-grid-container">
+        <div id="secretSanta" class="illustrationProject">
+            <img class="gridImage" src="~/Images/Illustration/SecretSantaSocietyChildrensBookIllustration.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="secretSantaOverlay">
+            <h3>children's book</h3>
+            @Html.ActionLink("Secret Santa Society", "SecretSantaSociety", "Illustration")
+        </div>
+
+        <div id="rapBattle" class="illustrationProject">
+            <img class="gridImage" src="~/Images/Illustration/RapBattlePoster.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="rapBattleOverlay">
+            <div class="overlayText">
+                <h3>Commission</h3>
+                @Html.ActionLink("Autumn Moon Rap Battle", "RapBattle", "Illustration")
+            </div>
+        </div>
+        <div id="emperor" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/EmperorSeedChildrensBook.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="emperorOverlay">
+            <h3>Children's Book</h3>
+            @Html.ActionLink("Emperor's Seed and other stories", "Emperor", "Illustration")
+        </div>
+        <div id="redriding" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/LittleRedRidingHood.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="redridingOverlay">
+            <h3>children's book</h3>
+            @Html.ActionLink("Little Red Riding Hood", "LittleRedRidingHood", "Illustration")
+        </div>
+        <div id="buddha" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/MomBuddhaMeditation.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="buddhaOverlay">
+            <h3>Personal Project</h3>
+            @Html.ActionLink("Portrait", "Buddha", "Illustration")
+        </div>
+        @*<div id="sick" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/Sick Zine Illustration.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="sickOverlay">
+            <h3>Zine</h3>
+            @Html.ActionLink("Long Distance Sucks", "Sick", "Illustration")
+        </div>*@
+        <div id="ideo" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/IDEO.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="ideoOverlay">
+            <h3>Work for Hire</h3>
+            @Html.ActionLink("EC Book Challenge", "IDEO", "Illustration")
+        </div>
+        <div id="veggie" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/VeggieAnimal.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="veggieOverlay">
+            <h3>Personal Project</h3>
+            @Html.ActionLink("Veggie Animal", "Veggie", "Illustration")
+        </div>
+        <div id="bear" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/BearBasketball.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="bearOverlay">
+            <h3>Personal Project</h3>
+            @Html.ActionLink("Basketball Animal Series", "Bear", "Illustration")
+        </div>
+        <div id="christmas" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/ChristmasCard.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="christmasOverlay">
+            <h3>Personal Project</h3>
+            @Html.ActionLink("Christmas Card", "Christmas", "Illustration")
+        </div>
+        <div id="panda" class="imageOverlay">
+            <img class="gridImage" src="~/Images/Illustration/StarvingPanda.jpg" />
+        </div>
+        <div class="illustrationOverlay" id="pandaOverlay">
+            <h3>Commission</h3>
+            @Html.ActionLink("Starving Panda", "Panda", "Illustration")
+        </div>
+    </div>
+
+<div class="mobileIllustration">
+    <div>
+        <a href="@Url.Action("Christmas", "Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/ChristmasCard.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Panda", "Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/StarvingPanda.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("SecretSantaSociety", "Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/SecretSantaSocietyChildrensBook.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("IDEO","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/IDEO.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Emperor","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/EmperorSeedChildrensBook.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("LittleRedRidingHood","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/LittleRedRidingHood.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Bear","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/BearBasketball.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Buddha","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/MomBuddhaMeditation.jpg" />
+        </a>
+    </div>
+    @*<div>
+        <a href="@Url.Action("Sick","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/Sick Zine Illustration.jpg" />
+        </a>
+    </div>*@
+    <div>
+        <a href="@Url.Action("RapBattle", "Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/RapBattlePoster.jpg" />
+        </a>
+    </div>
+    <div>
+        <a href="@Url.Action("Veggie","Illustration")">
+            <img class="mobileImage" src="~/Images/Illustration/VeggieAnimal.jpg" />
+        </a>
+    </div>
+</div>
+
+<script src="/script.js?svn_version=1"></script>
